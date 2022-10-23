@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectCalculator.MainPage">
+
+    <!--<StackLayout>
+        <Frame BackgroundColor="#918" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try Haman! test2" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>-->
+
+
+
+
+
+
+
+    <!--<Grid BackgroundColor="#24252a">
+        <Grid Grid.Row="0" BackgroundColor="Pink" Margin="0,0,0,100">
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="EndAndExpand">
+                <Label Text="24 +345 + 20" FontSize="Large" TextColor="Black" ></Label>
+                <Label TextColor="White" Text="389" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
+
+            </StackLayout>
+
+        </Grid>
+
+
+        <Grid Grid.Row="1" BackgroundColor="#DB6161" Margin="0,-100,0,0"></Grid>
+        <StackLayout Orientation="Vertical" Margin="20">
+            
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="1" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="2" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="3" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+
+
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="4" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="5" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="6" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+
+
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="7" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="8" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="9" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+
+
+            </StackLayout>
+            
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="0" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="+" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title"></Button>
+                <Button Text="-" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title"></Button>
+              
+            </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="AC" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                <Button Text="X" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title"></Button>
+                <Button Text="/" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title"></Button>
+
+            </StackLayout>
+
+
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button Text="=" TextColor="Black" BackgroundColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+               
+
+            </StackLayout>
+
+        </StackLayout>
+
+
+    </Grid>-->
+
+
+
+
+
+
+
+
+    <StackLayout Padding="20" BackgroundColor="#DB6161">
+        <Frame BackgroundColor="Pink"
+               Padding="6" Margin="0,0,0,5">
+            <Label x:Name="LblResult" 
+                Text="0"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   HorizontalOptions="End"></Label>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                
+                
+                
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                
+                
+            </Grid.ColumnDefinitions>
+            
+            <!--row 1 -->
+
+            <Button BackgroundColor="White" Grid.Row="0" 
+                Grid.Column="0" 
+                Text="1"
+                    FontSize="Large"
+                    x:Name="BtnOne"
+                    Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="0" 
+                Grid.Column="1" 
+                Text="2"
+                    FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="0" 
+                Grid.Column="2" 
+                Text="3"
+                    FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            
+           
+            
+            
+            <!--row 2-->
+
+            <Button BackgroundColor="White" Grid.Row="1" 
+                Grid.Column="0" 
+                Text="4"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="1" 
+                Grid.Column="1" 
+                Text="5"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="1" 
+                Grid.Column="2" 
+                Text="6"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+
+            <!--row3-->
+
+            <Button BackgroundColor="White" Grid.Row="2" 
+                Grid.Column="0" 
+                Text="7"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="2" 
+                Grid.Column="1" 
+                Text="8"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="2" 
+                Grid.Column="2" 
+                Text="9"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+
+
+            <!--row4-->
+
+            <Button BackgroundColor="White" Grid.Row="3" 
+                Grid.Column="0" 
+                Text="0"
+                FontSize="Large"
+                     Clicked="BtnNum_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="3" 
+                Grid.Column="1" 
+                Text="+"
+                FontSize="Large"
+                    
+                    Clicked="BtnNumOperation_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="3" 
+                Grid.Column="2" 
+                Text="-"
+                FontSize="Large"
+                   
+                    Clicked="BtnNumOperation_Clicked"/>
+
+
+            <!--row5-->
+
+            <Button BackgroundColor="White" Grid.Row="4" 
+                Grid.Column="0" 
+                Text="AC"
+                FontSize="Large"
+                     Margin="0,0,0,-40"
+                    x:Name="BtnClear"
+                    Clicked="BtnClear_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="4" 
+                Grid.Column="1" 
+                Text="X"
+                FontSize="Large"
+                    
+                    Clicked="BtnNumOperation_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="4" 
+                Grid.Column="2" 
+                Text="%"
+                FontSize="Large"
+                    
+                    Clicked="BtnNumOperation_Clicked"/>
+
+            <!--row6-->
+
+
+            <Button BackgroundColor="White" Grid.Row="5" 
+                Grid.Column="1" 
+                Text="="
+                FontSize="Large"
+                      Padding="5" Margin="0,0,-25,10"
+                    FontAttributes="Bold"
+                    x:Name="BtnEql"
+                    Clicked="BtnEql_Clicked"/>
+            <Button BackgroundColor="White" Grid.Row="5" 
+                Grid.Column="2" 
+                Text="."
+                FontSize="Large"
+                      Padding="5" Margin="25,0,0,10" 
+                    FontAttributes="Bold"
+                    
+                    Clicked="BtnNum_Clicked"/>
+            
+        </Grid>
+      
+    </StackLayout>
+    
+    
+
+</ContentPage>
